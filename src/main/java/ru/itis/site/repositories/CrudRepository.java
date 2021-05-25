@@ -17,8 +17,10 @@ public interface CrudRepository <T , ID> {
 
     void update(T account);
 
-    void delete(T account);
+    void delete();
 
     void deleteById(ID id);
+
+    void findByLogin(String login, String password);
 
 }
